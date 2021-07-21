@@ -1,0 +1,15 @@
+{
+  "$schema": "https://deno.land/x/denon@2.4.7/schema.json",
+  "scripts": {
+    "dev:server": {
+      "cmd": "deno run src/shared/app.ts",
+      "desc": "run my app.ts file",
+			"importmap": "./importmap.json",
+			"inspect": "127.0.0.1:9229",
+			"allow": [
+				"net",
+				"env"
+			]
+    }
+  }
+}
